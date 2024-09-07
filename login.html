@@ -6,18 +6,26 @@
     <title>Login Page</title>
 </head>
 <body>
-    <div class="fullScreen">
+    <form id="loginForm">
         <h1>Login</h1>
         <div class="loginCard">
-            <form>
-                    <label for="txtUsername">Username:</label>
-                    <input id="txtUsername" type="text" placeholder="Enter your username" required/>
-
-                    <label for="txtPassword">Password:</label>
-                    <input id="txtPassword" type="password" placeholder="Enter your password" required/>
-                    <input id="submit" type="submit" value="Sign in"/>
-            </form>
+            <div class="infoBox">
+                <label for="txtUsername">Username:</label>
+                <input id="txtUsername" type="text" placeholder="Enter your username" required/>
+            </div>
+            <div class="infoBox">
+                <label for="txtPassword">Password:</label>
+                <input id="txtPassword" type="password" placeholder="Enter your password" required/>
+            </div>
+            <label for="remember-me"><input class="inline" id="remember-me" type="checkbox"/> Remember me</label>
+            <div class="forgot">
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="buttons">
+                <input class="btnSubmit" id="submit" type="submit" value="Log in"/>
+                <input class="btnSubmit" id="signUp" type="button" value="Sign up"/>
+            </div>
         </div>
-    </div>
+    </form>
 </body>
 </html>
