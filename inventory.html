@@ -8,7 +8,6 @@
 <body>
     <h1>Inventory</h1>
     <button id="btnAddItem">Add Item</button>
-    <button id="btnEditItem">Edit Item</button>
     <button id="btnDeleteItem">Delete Item</button>
     <div>
         <form>
@@ -35,6 +34,9 @@
         </form>  
         <table>
             <tr>
+                <th></th>
+                <th></th>
+                <th>Select</th>
                 <th>Name</th>
                 <th>Item_Type</th>
                 <th>Group</th>
@@ -49,6 +51,9 @@
 
             <!--Filler Values-->
             <tr>
+                <td><button id="btnDeleteItem">Delete Item</button></td>
+                <td><button id="btnEditItem">Edit Item</button></td>
+                <td><input id="select-item" type="checkbox"></td>
                 <td>Welcome</td>
                 <td>Stove Board</td>
                 <td>Christmas</td>                
