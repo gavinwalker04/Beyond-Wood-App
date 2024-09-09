@@ -11,6 +11,24 @@
     <button id="btnEditItem">Edit Item</button>
     <button id="btnDeleteItem">Delete Item</button>
     <div>
+        <form>
+            <label for="filter-select">
+                <select name="filter" id="filter-select">
+                    <option value="">Filter By</option>
+                    <option value="1">Stain Color</option>
+                    <option value="2">Stencil</option>
+                </select>
+            </label>
+            <label for="sort-select">
+                <select name="sort-by" id="sort-select">
+                    <option value="">Sort By</option>
+                    <option value="">Name (alphabetically)</option>
+                    <option value="">Price</option>
+                    <option value="">Number Sold</option>
+                    <option value="">Quantity</option>
+                </select>
+            </label>
+        </form>
         <table>
             <tr>
                 <th>Name</th>
