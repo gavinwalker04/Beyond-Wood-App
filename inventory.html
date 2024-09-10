@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+</head>
+<body>
+    <h1>Inventory</h1>
+    <div class="searchbar">
+        <input type="text" id="search" placeholder="Search items"/>
+    </div>
+    <button id="btnAddItem">Add Item</button>
+    <button id="btnDeleteItem">Delete Item</button>
+    <div>
+        <form>
+            <label for="filter-select">
+                Filter By
+                <select name="filter" id="filter-select">
+                    <option value=""></option>
+                    <option value="1">Stain Color</option>
+                    <option value="2">Stencil</option>
+                    <option value="3">Group</option>
+                    <option value="4">Item Type</option>
+                </select>
+            </label>
+            <label for="sort-select">
+                Sort By
+                <select name="sort-by" id="sort-select">
+                    <option value=""></option>
+                    <option value="">Name (alphabetically)</option>
+                    <option value="">Price</option>
+                    <option value="">Number Sold</option>
+                    <option value="">Quantity</option>
+                </select>
+            </label>
+        </form>  
+        <table>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Select</th>
+                <th>Name</th>
+                <th>Item_Type</th>
+                <th>Group</th>
+                <th>Stain_Color</th>
+                <th>Stencil</th>
+                <th>Quantity</th>
+                <th>On order</th>
+                <th>Price</th>
+                <th>Number_Sold</th>
+                <th>Image</th>
+            </tr>
+
+            <!--Filler Values-->
+            <tr>
+                <td><button id="btnDeleteItem">Delete Item</button></td>
+                <td><button id="btnEditItem">Edit Item</button></td>
+                <td><input id="select-item" type="checkbox"></td>
+                <td>Welcome</td>
+                <td>Stove Board</td>
+                <td>Christmas</td>                
+                <td>Gunsmoke</td>
+                <td>Monogram</td>
+                <td>20</td>
+                <td>3</td>
+                <td>$60</td>
+                <td>50</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
