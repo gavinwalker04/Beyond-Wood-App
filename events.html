@@ -14,5 +14,48 @@
     <button id="btnAddEvent">Add Event</button>
     <button id="btnDeleteEvent">Delete Event</button>
     <div>
+        <label for="filterSelectEvent">
+            Filter By
+            <select name="filter" id="filterSelectEvent">
+                <option value=""></option>
+                <option value="1">All</option>
+                <option value="2">Upcoming</option>
+                <option value="3">Finished</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <table>
+            <caption>Upcoming</caption>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Select</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Date</th>
+                <th>Set up Time</th>
+                <th>Cost to Attend</th>
+                <th>Revenue</th>
+                <th>Profits</th>
+                <th>Sales</th>
+            </tr>
+
+            <!--Filler Values-->
+            <tr>
+                <td><button id="btnDeleteEvent">Delete Item</button></td>
+                <td><button id="btnEditEvent">Edit Item</button></td>
+                <td><input id="selectEvent" type="checkbox"></td>
+                <td>Halloween Fest</td>
+                <td>Nashville, TN</td>
+                <td>09/09/2024</td>
+                <td>6:00 AM</td>
+                <td>$400</td>                
+                <td>$2000</td>
+                <td>$1600</td>
+                <td>47</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
