@@ -7,12 +7,16 @@
 </head>
 <body>
     <h1>Events</h1>
-    <div class="searchbar">
+    <div class="searchBar">
         <input type="text" id="search" placeholder="Search items"/>
+    </div>
+    <div class="viewButtons">
+        <button id="btnListView">List View</button>
+        <button id="btnCalendarView">Calendar View</button>
     </div>
     <button id="btnAddEvent">Add Event</button>
     <button id="btnDeleteEvent">Delete Event</button>
-    <div>
+    <div class="filterBy">
         <label for="filterSelectEvent">
             Filter By
             <select name="filter" id="filterSelectEvent">
@@ -25,7 +29,7 @@
             </select>
         </label>
     </div>
-    <div>
+    <div class="upcomingEvents">
         <table>
             <caption>Upcoming</caption>
             <tr>
@@ -59,7 +63,7 @@
         </table>
     </div>
     
-    <div>
+    <div class="previousEvents">
         <table>
             <caption>Previous</caption>
             <tr>
