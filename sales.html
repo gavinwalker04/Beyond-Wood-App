@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/zephyr/bootstrap.min.css" integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.bootstrap5.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="hope-ui.min 1.css"/>
+    <link rel="stylesheet" href="dark.css">
+</head>
+<body>
+  <aside class="sidebar sidebar-default sidebar-white sidebar-base navs-rounded-all ">
+    <div class="sidebar-header d-flex align-items-center justify-content-start">
+        <a href="../dashboard/index.html" class="navbar-brand">
+            
+            <!--Logo start-->
+            <div class="logo-main">
+                <div class="logo-normal">
+                    <img src="bw-logo-with-border.png" width="43px" height="43px" alt="">
+                </div>
+                <div class="logo-mini">
+                    <img src="bw-logo-with-border.png" width="43px" height="43px" alt="">
+                </div>
+            </div>
+            <!--logo End-->
+            
+            
+            
+            
+            <h4 class="logo-title">Beyond Wood</h4>
+        </a>
+        <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
+            <i class="icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.25 12.2744L19.25 12.2744" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M10.2998 18.2988L4.2498 12.2748L10.2998 6.24976" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </i>
+        </div>
+    </div>
+    <div class="sidebar-body pt-0 data-scrollbar" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: currentcolor;"><div class="scroll-content">
+        <div class="sidebar-list">
+            <!-- Sidebar Menu Start -->
+            <ul class="navbar-nav iq-main-menu" id="sidebar-menu">
+                <li class="nav-item static-item">
+                    <a class="nav-link static-item disabled" href="#" tabindex="-1">
+                        <span class="default-icon">Home</span>
+                        <span class="mini-icon">-</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../dashboard/index.html">
+                        <i class="bi bi-house-fill"></i>
+                        <span class="item-name">Dashboard</span>
+                    </a>
+                </li>
+
+                
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../dashboard/index.html">
+                      <i class="bi bi-person-circle"></i>
+                      <span class="item-name">Profile</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../dashboard/index.html">
+                      <i class="bi bi-list-check"></i>
+                      <span class="item-name">To-Do</span>
+                  </a>
+                </li>
+                
+                <li><hr class="hr-horizontal"></li>
+                <li class="nav-item static-item">
+                    <a class="nav-link static-item disabled" href="#" tabindex="-1">
+                        <span class="default-icon">Pages</span>
+                        <span class="mini-icon">-</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="inventory.html">
+                      <i class="bi bi-archive-fill"></i>
+                      <span class="item-name">Inventory</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="events.html">
+                      <i class="bi bi-calendar-week-fill"></i>
+                      <span class="item-name">Events</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="sales.html">
+                      <i class="bi bi-currency-dollar"></i>
+                      <span class="item-name">Sales</span>
+                  </a>
+                </li>
+                
+                <li><hr class="hr-horizontal"></li>
+                <li class="nav-item static-item">
+                    <a class="nav-link static-item disabled" href="#" tabindex="-1">
+                        <span class="default-icon">Elements</span>
+                        <span class="mini-icon">-</span>
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="settings.html">
+                    <i class="bi bi-gear-wide-connected"></i>
+                    <span class="item-name">Settings</span>
+                  </a>
+                </li>
+            </ul>
+            <!-- Sidebar Menu End -->        </div>
+    </div><div class="scrollbar-track scrollbar-track-x" style="display: none;"><div class="scrollbar-thumb scrollbar-thumb-x" style="width: 259px; transform: translate3d(0px, 0px, 0px);"></div></div><div class="scrollbar-track scrollbar-track-y" style="display: none;"><div class="scrollbar-thumb scrollbar-thumb-y" style="height: 804px; transform: translate3d(0px, 0px, 0px);"></div></div></div>
+    <div class="sidebar-footer"></div>
+    </aside>
+    <div class="col-md-10 offset-md-2 containerAll">
+        <h1 class="mt-4 mb-4">Sales</h1>
+        <div class="card me-5 p-4">
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/2.1.7/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.1.7/js/dataTables.bootstrap5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="hope-ui 1.js"></script>
+    <script src="setting.js"></script>
+    <script>
+      $('#tblInventory').dataTable();
+      $(document).on('click','.sidebar-toggle',function(){
+        //Look for mini and decide to show or hide the columns
+        if($('aside').hasClass('sidebar-mini')){
+          $('.containerAll').removeClass('col-md-10 offset-md-2').addClass('col-md-11 offset-md-1')
+
+        } else {
+          $('.containerAll').removeClass('col-md-11 offset-md-1').addClass('col-md-10 offset-md-2')
+
+        }
+      })
+    </script>
+</body>
+</html>
