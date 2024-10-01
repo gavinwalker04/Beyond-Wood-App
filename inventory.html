@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.bootstrap5.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="hope-ui.min 1.css"/>
     <link rel="stylesheet" href="dark.css">
 </head>
@@ -19,20 +20,10 @@
             <!--Logo start-->
             <div class="logo-main">
                 <div class="logo-normal">
-                    <svg class=" icon-30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2" transform="rotate(-45 -0.757324 19.2427)" fill="currentColor"></rect>
-                        <rect x="7.72803" y="27.728" width="28" height="4" rx="2" transform="rotate(-45 7.72803 27.728)" fill="currentColor"></rect>
-                        <rect x="10.5366" y="16.3945" width="16" height="4" rx="2" transform="rotate(45 10.5366 16.3945)" fill="currentColor"></rect>
-                        <rect x="10.5562" y="-0.556152" width="28" height="4" rx="2" transform="rotate(45 10.5562 -0.556152)" fill="currentColor"></rect>
-                    </svg>
+                    <img src="bw-logo-with-border.png" width="43px" height="43px" alt="">
                 </div>
                 <div class="logo-mini">
-                    <svg class=" icon-30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2" transform="rotate(-45 -0.757324 19.2427)" fill="currentColor"></rect>
-                        <rect x="7.72803" y="27.728" width="28" height="4" rx="2" transform="rotate(-45 7.72803 27.728)" fill="currentColor"></rect>
-                        <rect x="10.5366" y="16.3945" width="16" height="4" rx="2" transform="rotate(45 10.5366 16.3945)" fill="currentColor"></rect>
-                        <rect x="10.5562" y="-0.556152" width="28" height="4" rx="2" transform="rotate(45 10.5562 -0.556152)" fill="currentColor"></rect>
-                    </svg>
+                    <img src="bw-logo-with-border.png" width="43px" height="43px" alt="">
                 </div>
             </div>
             <!--logo End-->
@@ -121,77 +112,63 @@
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../dashboard/index.html">
+                  <a class="nav-link" aria-current="page" href="settings.html">
                     <i class="bi bi-gear-wide-connected"></i>
                     <span class="item-name">Settings</span>
                   </a>
                 </li>
-
-                <div class="btn btn-border" data-setting="color-mode" data-name="color" data-value="dark">
-                    <svg class="icon-20" width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="currentColor" d="M9,2C7.95,2 6.95,2.16 6,2.46C10.06,3.73 13,7.5 13,12C13,16.5 10.06,20.27 6,21.54C6.95,21.84 7.95,22 9,22A10,10 0 0,0 19,12A10,10 0 0,0 9,2Z"></path>
-                    </svg>
-                    <span class="ms-2 "> Dark</span>
-                </div>
-
-                <div class="btn btn-border active" data-setting="color-mode" data-name="color" data-value="light">
-                  <svg class="icon-20" width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="currentColor" d="M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z"></path>
-                  </svg>
-                  <span class="ms-2 "> Light</span>
-                </div>
             </ul>
             <!-- Sidebar Menu End -->        </div>
     </div><div class="scrollbar-track scrollbar-track-x" style="display: none;"><div class="scrollbar-thumb scrollbar-thumb-x" style="width: 259px; transform: translate3d(0px, 0px, 0px);"></div></div><div class="scrollbar-track scrollbar-track-y" style="display: none;"><div class="scrollbar-thumb scrollbar-thumb-y" style="height: 804px; transform: translate3d(0px, 0px, 0px);"></div></div></div>
     <div class="sidebar-footer"></div>
-    </aside>    
-            <div>
-                <button class="btn btn-primary me-2 float-end" id="btnAddItem" data-bs-toggle="modal" data-bs-target="#addItemModal">Add Item</button>
-                <button class="btn btn-dark me-2 float-end" id="btnDeleteItem">Delete Item</button>
-            </div>
+    </aside>   
             <div class="col-md-10 offset-md-2 containerAll">
                 <h1 class="mt-4 mb-4">Inventory</h1>
-                <table id="tblInventory" class="table table-striped table-hover">
-                    <thead>
+                <div class="card me-5 p-4">
+                    <div>
+                        <button class="btn btn-primary float-end" id="btnAddItem" data-bs-toggle="modal" data-bs-target="#addItemModal">Add Item</button>
+                        <button class="btn btn-dark me-2 float-end" id="btnDeleteItem">Delete Item</button>
+                    </div>
+                    
+                    <table id="tblInventory" class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Item_Type</th>
+                                <th>Theme</th>
+                                <th>Stain_Color</th>
+                                <th>Stencil</th>
+                                <th>Quantity</th>
+                                <th>On order</th>
+                                <th>Price</th>
+                                <th>Number_Sold</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                        <!--Filler Values-->
                         <tr>
-                            <th></th>
-                            <th>Select</th>
-                            <th>Name</th>
-                            <th>Item_Type</th>
-                            <th>Theme</th>
-                            <th>Stain_Color</th>
-                            <th>Stencil</th>
-                            <th>Quantity</th>
-                            <th>On order</th>
-                            <th>Price</th>
-                            <th>Number_Sold</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-group-divider">
-                    <!--Filler Values-->
-                    <tr>
-                        <td>
-                            <div class="dropdown"></div>
+                            <td>
+                                <input id="select-item" type="checkbox">
                                 <button id="itemOptions" class="btn btn-icon btn-gray-subtle dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span><i class="bi bi-three-dots-vertical"></i></span></button>
                                 <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#"><button id="deleteItem" type="button" class="btn btn-danger btn-sm w-100"><span><i class="bi bi-trash3-fill"> Delete Item</i></span></button></a></li>
-                                  <li><a class="dropdown-item" href="#"><button id="editItem" type="button" class="btn btn-secondary btn-sm w-100"><span><i class="bi bi-pencil-fill"> Edit Item</i></span></button></a></li>
+                                    <li><a class="dropdown-item" href="#"><button id="deleteItem" type="button" class="btn btn-danger btn-sm w-100"><span><i class="bi bi-trash3-fill"> Delete Item</i></span></button></a></li>
+                                    <li><a class="dropdown-item" href="#"><button id="editItem" type="button" class="btn btn-secondary btn-sm w-100"><span><i class="bi bi-pencil-fill"> Edit Item</i></span></button></a></li>
                                 </ul>
-                              </div>
-                        </td>
-                        <td><input id="select-item" type="checkbox"></td>
-                        <td>Welcome</td>
-                        <td>Stove Board</td>
-                        <td>Christmas</td>                
-                        <td>Gunsmoke</td>
-                        <td>Monogram</td>
-                        <td>20</td>
-                        <td>3</td>
-                        <td>$60</td>
-                        <td>50</td>
-                    </tr>
-                    
-                </table>
+                            </td>
+                            <td>Welcome</td>
+                            <td>Stove Board</td>
+                            <td>Christmas</td>                
+                            <td>Gunsmoke</td>
+                            <td>Monogram</td>
+                            <td>20</td>
+                            <td>3</td>
+                            <td>$60</td>
+                            <td>50</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
             </div>
         
 
@@ -204,12 +181,83 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                  <p>Modal body text goes here.</p>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
+                <label for="itemNameDataList" class="form-label">Item Name</label>
+                <input class="form-control" list="itemNameOptions" id="itemNameDataList" placeholder="Enter Item Name...">
+                <datalist id="itemNameOptions">
+                  <option value="Welcome">
+                  <option value="Home Sweet Home">
+                  <option value="Monogram">
+                  <option value="Go Away">
+                  <option value="Game Day">
+                </datalist>
+
+                <label for="itemTypes" class="form-label">Item Type</label>
+                <input class="form-control" list="itemTypesOptions" id="itemTypes" placeholder="Enter Item Type...">
+                <datalist id="itemTypesOptions">
+                  <option value="Welcome">
+                  <option value="Home Sweet Home">
+                  <option value="Monogram">
+                  <option value="Go Away">
+                  <option value="Game Day">
+                </datalist>
+                
+                <label for="itemThemes" class="form-label">Theme</label>
+                <input class="form-control" list="itemThemeOptions" id="itemThemes" placeholder="Enter Theme...">
+                <datalist id="itemThemeOptions">
+                  <option value="Halloween">
+                  <option value="Christmas">
+                  <option value="Summer">
+                  <option value="Fall">
+                  <option value="USA">
+                </datalist>
+
+                <label for="itemStainColor" class="form-label">Stain Color</label>
+                <input class="form-control" list="itemStainOptions" id="itemStainColor" placeholder="Enter Stain Color...">
+                <datalist id="itemStainOptions">
+                  <option value="Gunsmoke">
+                  <option value="Mahogany">
+                  <option value="Oak">
+                  <option value="Beige">
+                  <option value="Clear">
+                </datalist>
+
+                <label for="itemStencil" class="form-label">Stencil</label>
+                <input class="form-control" list="itemStencilOptions" id="itemStencil" placeholder="Enter Stencil Name...">
+                <datalist id="itemStencilOptions">
+                  <option value="Monogram">
+                  <option value="Hocus Pocus">
+                  <option value="Merry Christmas">
+                  <option value="Come on In">
+                  <option value="Mantra">
+                </datalist>
+
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <label for="itemQtyOnHand" class="form-label">Quantity</label>
+                        <input class="form-control" id="itemQtyOnHand" placeholder="Enter Quantity on Hand...">
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <label for="itemOnOrder" class="form-label">On Order</label>
+                        <input class="form-control" id="itemOnOrder" placeholder="Enter Number On Order...">
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <label for="itemPrice" class="form-label">Price</label>
+                        <input class="form-control"  id="itemPrice" placeholder="Enter Price...">
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <label for="numberSold" class="form-label">Number Sold</label>
+                        <input class="form-control" id="numberSold" placeholder="Enter Number Sold...">    
+                    </div>
+                    
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
           </div>
       </div>
       </div>
@@ -218,6 +266,7 @@
     <script src="https://cdn.datatables.net/2.1.7/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/2.1.7/js/dataTables.bootstrap5.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="hope-ui 1.js"></script>
     <script src="setting.js"></script>
     <script>
